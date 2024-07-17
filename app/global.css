@@ -31,6 +31,7 @@
 
 html {
   min-width: 360px;
+  font-family: 'ClashDisplay-Variable',sans-serif;
 }
 
 .prose .anchor {
@@ -41,6 +42,24 @@ html {
   width: 80%;
   max-width: 700px;
   cursor: pointer;
+}
+
+@theme{
+
+  --color-off-white:#f6eee5;
+  --color-dark:#121212;
+  --color-blur:rgba(248, 240, 227, 0.7)
+
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Variable';
+  src: url('../assets/fonts/ClashDisplay-Variable.woff2') format('woff2'),
+  url('../assets/fonts/ClashDisplay-Variable.woff') format('woff'),
+  url('../assets/fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
 }
 
 .anchor:hover {
