@@ -3,20 +3,31 @@ import React from 'react'
 
 export default function Page() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
-    </section>
-  )
+		<section className="pt-14">
+			<h1 className="mb-4 text-fuchsia-900 text-6xl font-[600] capitalize ">
+				Focused on impact and <br /> results-driven designs.
+			</h1>
+			<p className="text-emerald-900 text-xl w-3/5">
+				Hi, I’m Zavier and I craft visual solutions for brands, corporations, startups,
+				and entrepreneurs taking their visual impact to elite status. If your
+				looking for your website to have the latest modern feel. Let’s create
+				something together that will make heads turn!
+			</p>
+
+			<h1 className="mb-4 text-off-white text-hero font-[500] ">
+				{`Focused on impact and results-driven designs.`}
+			</h1>
+			<p className="text-off-white text-2xl">
+				Specialized in building brands by crafting their Brand Identity, User
+				Experience, and Custom Websites to connect people with brands Hi, I’m
+				Zavier and I craft visual solutions for brands, corporations, startups,
+				and entrepreneurs taking their visual impact to elite status. If your
+				looking for your website to have the latest modern feel. Let’s create
+				something together that will make heads turn!
+			</p>
+			<div className="my-8">
+				<BlogPosts />
+			</div>
+		</section>
+	);
 }

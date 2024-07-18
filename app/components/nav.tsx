@@ -1,10 +1,9 @@
 import Link from 'next/link'
+import path from 'path';
 import React from 'react'
 
 const navItems = {
-  '/': {
-    name: 'Zavier Lowe',
-  },
+ 
   '/blog': {
     name: 'Blog',
   },
@@ -19,25 +18,21 @@ const navItems = {
 export function Navbar() {
   return (
 		<aside className="mb-16 tracking-tight">
-			<div className="lg:sticky lg:top-20 border p-4 rounded-2xl bg-blur">
-				<nav
-					className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-					id="nav">
-					<div className="flex flex-row space-x-0 pr-10 font-white">
-						{Object.entries(navItems).map(([path, { name }]) => {
-							return (
-								<Link
-									key={path}
-									href={path}
-									className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1">
-									{name}
-								</Link>
-							);
-						})}
-					</div>
-				</nav>
-			</div>
-			
+			<nav className="fixed top-4 mx-auto w-[80%] left-0 right-0 z-50 flex justify-between items-center border border-1 rounded-xl p-3 bg-blur backdrop-blur-[130px] shadow-nav">
+				<Link href={'/'} className="font-[500] text-xl">Zavier Lowe</Link>
+				<div className="flex flex-row space-x-0 pr-1 font-[400] text-lg">
+					{Object.entries(navItems).map(([path, { name }]) => {
+						return (
+							<Link
+								key={path}
+								href={path}
+								className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1">
+								{name}
+							</Link>
+						);
+					})}
+				</div>
+			</nav>
 		</aside>
 	);
 }
