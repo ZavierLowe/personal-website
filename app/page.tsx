@@ -1,9 +1,12 @@
 import { BlogPosts } from 'app/components/posts'
+import ProjectCard  from 'app/components/projectCard'
+import BlobBlur from 'app/components/blobBlur'
 import React from 'react'
 
 export default function Page() {
   return (
 		<section className="pt-14">
+      <BlobBlur/>
 			<h1 className="mb-4 text-fuchsia-900 text-6xl font-[600] capitalize ">
 				Focused on impact and <br /> results-driven designs.
 			</h1>
@@ -13,7 +16,7 @@ export default function Page() {
 				looking for your website to have the latest modern feel. Let’s create
 				something together that will make heads turn!
 			</p>
-
+      <ProjectCard/>
 			<h1 className="mb-4 text-off-white text-hero font-[500] ">
 				{`Focused on impact and results-driven designs.`}
 			</h1>
